@@ -1,0 +1,43 @@
+<ion-header>
+
+  <ion-navbar color="dark">
+      <button ion-button="" menuToggle="">
+          <ion-icon name="menu"></ion-icon>
+      </button>
+      <h4> <ion-title>Demande Attestation</ion-title></h4> 
+  </ion-navbar>
+
+</ion-header>
+
+ <ion-content>
+        <ion-list inset>
+            <ion-item  padding>
+                <ion-label color="primary">A:</ion-label>
+                <ion-input [(ngModel)]="to" type="text" value="mohamed.hafid.z@outlook.fr">mohamed.hafid.z@outlook.fr</ion-input>
+            </ion-item>
+    
+            <ion-item padding>
+              <ion-label color="primary">Sujet:</ion-label>
+              <ion-input  [(ngModel)]="subject"  type="text"></ion-input>
+            </ion-item>
+          
+            <ion-item padding>
+              <ion-label color="primary"> Message:</ion-label>
+              <ion-input [(ngModel)]= "body" type="text"></ion-input>
+              <ion-select [(ngModel)]="format">
+                  <ion-option value="pdf">pdf</ion-option>
+                  <ion-option value="png">png</ion-option>
+                  <ion-option value="word">word</ion-option>
+               </ion-select>
+            </ion-item>
+          </ion-list>
+
+          <button ion-button full (click)="envoyer()" color="danger" padding> 
+            <ion-icon name="send"> Envoyer</ion-icon>
+         </button>
+         <ion-card *ngFor='let demande of liste'> 
+                    <ion-item>Sujet: <h5>{{demande.subject}}</h5></ion-item>  
+                    <ion-item>Message: <h5>{{demande.body}}</h5> </ion-item>  
+        </ion-card>
+            
+ </ion-content>

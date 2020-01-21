@@ -1,0 +1,21 @@
+ <ion-menu [content]="mycontent">
+  <ion-header>
+      <div class="profile">
+          <img class="profile-picture" src="http://ionicframework.com/img/docs/mcfly.jpg" />
+          <h5 class="name">HAFID MOHAMED</h5>
+      </div>
+  </ion-header>
+
+  <ion-content>
+           <div class='swanky_wrapper'>
+              <ion-label menuClose=""  *ngFor="let m of pages" (click) ="openPage(m)">
+                  <ion-icon class="iconPrincipal" item-start [name]="m.icon" [color]="isActive(m)"></ion-icon>
+                    <span padding> {{m.title}}</span> 
+                    <ion-icon  name="ios-arrow-forward-outline" style="text-align-last: right"></ion-icon>
+              </ion-label>
+           </div>  
+  </ion-content>
+
+</ion-menu>
+
+<ion-nav #mycontent [root]="rootPage" swipeBackEnabled="false"></ion-nav>

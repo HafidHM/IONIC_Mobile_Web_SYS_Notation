@@ -1,0 +1,63 @@
+ion-content .swanky_wrapper {
+  width: 410px;
+  height: auto;
+  overflow: hidden;
+  border-radius: 2px;
+  background: #2a394f;
+}
+ion-content .swanky_wrapper ion-label {
+  padding: 20px;
+  float: left;
+  height: 90px;
+  position: relative;
+  width: 100%;
+  color: #eff4fa;
+  -webkit-transition: text-indent .15s, height .3s;
+  transition: text-indent .15s, height .1s;
+  box-sizing: border-box;
+  margin-top: 0%;
+  padding-bottom: 0%;
+}
+
+ion-content .swanky_wrapper ion-label span {
+  position: relative;
+  top: -4px;
+}
+ion-content .swanky_wrapper ion-label:hover {
+  background: #212e41;
+  border-bottom: 5px solid #2A394F;
+  text-indent: 10px;
+}
+.iconPrincipal{
+  font-size: 20px;
+}
+
+.profile {
+  background-color: #212e41;
+  height: 170px;
+}
+
+.profile {
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 0;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  padding-top: 15px;
+}
+
+.profile .name {
+  color: #FFFFFF;
+  margin-top: 6px !important;
+  margin-bottom: 10px !important;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+.profile-picture {
+  border-radius: 50%;
+}
+

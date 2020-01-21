@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar color="dark">
+      <button ion-button="" menuToggle="">
+          <ion-icon name="menu"></ion-icon>
+      </button>
+    <ion-title>Relevé Des Retards</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card *ngFor="let retard of listeRetards">
+
+    <ion-card-header style="color: rgb(8, 1, 75);">
+        <ion-icon name="calendar"></ion-icon>
+        {{ retard.Date }}
+    </ion-card-header>
+  
+    <ion-card-content>
+      
+        <p style="color: green; text-align: right"><b>Heure de Debut: </b>{{ retard.Heure_debut }}</p>
+        <p style="color: rgb(128, 9, 0); text-align: right"><b>Heure de Fin: </b>{{ retard.Heure_fin }}</p>
+        <p><b>Justification: </b> {{ retard.Justification }}</p>
+        <p><b>duree: </b> {{ retard.La_duree }}</p>
+        <p><b>Matiere: </b> {{ retard.Matiere  }}</p>
+        <p><b>Type: </b> {{ retard.Seance_type }}</p>
+    </ion-card-content>
+  
+</ion-card> 
+</ion-content>
+

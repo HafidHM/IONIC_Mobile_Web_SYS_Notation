@@ -1,0 +1,93 @@
+<ion-header>
+
+  <ion-navbar color="dark">
+      <button ion-button="" menuToggle="">
+          <ion-icon name="menu"></ion-icon>
+      </button>
+    <ion-title>Relevé De Paiement</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+   
+  <ion-card *ngFor= " let reglement of listeReglements"> 
+    <ion-card-header style="background: rgb(65, 65, 65)">
+       <p style="color: white"> Liste des versements de:</p> <br>
+        <p style="color: rgb(255, 255, 255)">{{reglement.versement_de}}</p>
+    </ion-card-header>
+   <ion-card-content > 
+    <ion-list>
+      <button class="listePr" ion-item>
+          Mode de paiement: <br>
+        {{reglement.mode_de_paiement}}
+      </button>
+  
+      <button class="listePr" ion-item>
+          Montant:<br>
+          {{reglement.montant}} 
+      </button>
+  
+      <button class="listePr" ion-item>
+          Réduction:<br>
+          {{reglement.reduction}} 
+      </button>
+  
+      <button class="listePr"  ion-item>
+            Versement total: <br>
+            {{reglement.versement_total}}
+      </button>
+  
+      <button class="listePr" ion-item>
+          Reste:     <br>   
+         {{reglement.reste}} 
+      </button>
+  
+      <button class="listePr" ion-item>
+          Etat: <br>
+          {{reglement.etat}} 
+      </button>
+    </ion-list>
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-card *ngFor="let versement of listeVersements" >
+        <ion-list>
+                    <button ion-item>
+                        Service <br>  
+                    {{versement.service}}
+                    </button>
+                    <button ion-item>
+                        Type<br>
+                        {{versement.type}} 
+                    </button>
+                    <button ion-item>
+                        Numero Cheque
+                        {{versement.n_cheque}}
+                    </button>
+                    <button ion-item>
+                        Nom de la banque<br>
+                        {{versement.nom_banque}} 
+                    </button>
+                    <button ion-item>
+                            Commantaire<br>
+                            {{versement.commantaire}}
+                    </button>
+                    <button ion-item>
+                        Date<br>
+                        {{versement.date}}
+                    </button>
+                    <button ion-item>
+                        Date_encaissement<br>
+                        {{versement.date_encaissement}}
+                    </button>
+                    <button ion-item>
+                        Montant <br>
+                        {{versement.montant}} 
+                    </button>      
+        </ion-list>
+    </ion-card>
+
+
+</ion-content>
