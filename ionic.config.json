@@ -1,0 +1,25 @@
+{
+  "name": "ProjectMobileStagefinal",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "proxies": [
+    {
+      "path": "/ProjetMobileStageFinal/gestiEtdAbsencesRetards.php?func=listeRetardsEtudiant",
+      "proxyUrl": "http://10.188.6.61/ProjetMobileStageFinal/gestiEtdAbsencesRetards.php?func=listeRetardsEtudiant"
+    },
+    {
+      "path": "/ProjetMobileStageFinal/gestiEtdAbsencesRetards.php?func=listeEtudiantsAbsences",
+      "proxyUrl": "http://10.188.6.61/ProjetMobileStageFinal/gestiEtdAbsencesRetards.php?func=listeAbsencesEtudiant"
+    },
+    {
+      "path": "/ProjetMobileStageFinal/gestiEtdReglements.php?func=listeEtudiantsReglement",
+      "proxyUrl": "http://192.168.18.2/ProjetMobileStageFinal/gestiEtdReglements.php?func=listeEtudiantsReglement"
+    },
+    {
+      "path": "/ProjetMobileStageFinal/gestiEtdReglements.php?func=listeVersements",
+      "proxyUrl": "http://192.168.18.2/ProjetMobileStageFinal/gestiEtdReglements.php?func=listeVersements"
+    }
+  ]
+}
