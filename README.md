@@ -1,2 +1,2 @@
 # IONIC_Mobile_Web_SYS_Notation
-Application mobile web avec le framework IONIC V3, PHP, SQLite et MySQL, c'est un systeme de notation pour une ecole.
+Application mobile web , c'est un systeme de notation pour une ecole (Utilisation du framework IONIC V3, Angular, Cordova, HTML,CSS ,PHP, SQLite et MySQL).
